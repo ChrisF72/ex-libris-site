@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ex-Libris — votre bibliothèque, sur votre téléphone</title>
+<meta name="description" content="Ex-Libris est une application Android de bibliothèque personnelle. Aucun serveur, aucun compte, aucune publicité.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+
+<h1>Ex-Libris</h1>
+<p class="tagline">Votre bibliothèque, rangée sur une étagère de couvertures.</p>
+
+<p>Ex-Libris est une application Android qui recense les livres que vous possédez.
+Vous scannez le code-barres au dos d'un livre, et il vient se ranger sur l'étagère
+avec sa couverture, son titre et son auteur.</p>
+
+<p>Elle est distribuée en cercle familial restreint, par la piste de test interne de
+Google Play. Elle n'est pas publiée sur le Play Store et n'a pas vocation à l'être.</p>
+
+<h2>Ce qu'elle fait</h2>
+
+<ul>
+  <li><strong>Une étagère visuelle.</strong> Vos livres sont des couvertures, pas des lignes
+      dans un tableau.</li>
+  <li><strong>Trois façons d'ajouter un livre.</strong> Le scan du code-barres, la photo de la
+      couverture avec reconnaissance de texte, ou la saisie à la main.</li>
+  <li><strong>Les informations arrivent seules.</strong> Titre, auteur, éditeur, année,
+      couverture : trois catalogues publics sont interrogés et leurs réponses fusionnées.</li>
+  <li><strong>Tout fonctionne hors connexion.</strong> La bibliothèque est sur le téléphone.
+      Le réseau ne sert qu'à chercher les informations d'un livre qu'on ajoute.</li>
+  <li><strong>Sauvegarde vers votre Google Drive</strong>, si vous le demandez, et seulement
+      dans un dossier que l'application crée elle-même.</li>
+</ul>
+
+<h2>D'où viennent les informations des livres</h2>
+
+<p>Ex-Libris n'a pas de base de données de livres. Quand vous scannez un code-barres, elle
+interroge trois catalogues publics et recoupe leurs réponses :</p>
+
+<table>
+  <tr><th>Catalogue</th><th>Rôle</th></tr>
+  <tr><td><strong>BnF</strong> — Bibliothèque nationale de France</td>
+      <td>Interrogée en premier pour l'édition française</td></tr>
+  <tr><td><strong>Google Books</strong></td>
+      <td>Interrogé en premier pour l'édition étrangère</td></tr>
+  <tr><td><strong>Open Library</strong></td>
+      <td>En complément, souvent pour la couverture</td></tr>
+</table>
+
+<p>Les trois sont interrogés à chaque fois, et leurs réponses fusionnées en une seule fiche :
+le titre de l'un, la couverture de l'autre. Ils ne reçoivent qu'un numéro ISBN — jamais votre
+identité, jamais le contenu de votre bibliothèque.</p>
+
+<h2>Ce qu'elle ne fait pas</h2>
+
+<div class="card">
+<p>Pas de compte à créer. Pas de serveur. Pas de publicité. Pas de statistiques d'usage.
+Pas de partage. Pas de lecture de vos fichiers. Pas de permission d'accès au stockage
+du téléphone.</p>
+<p>Ex-Libris ne lit pas les livres — elle les recense.</p>
+</div>
+
+<h2>Vie privée</h2>
+
+<p>L'application ne collecte aucune donnée personnelle et n'en transmet à personne.
+Le détail complet est sur la page dédiée :</p>
+
+<p><a href="confidentialite.html"><strong>→ Règles de confidentialité</strong></a></p>
+
+<footer>
+<p>Ex-Libris · application Android · nom de package <code>fr.exlibris.bibliotheque</code></p>
+<p>Distribution familiale par test interne Google Play. Aucun serveur, aucun compte, aucune publicité.</p>
+</footer>
+
+</main>
+</body>
+</html>

@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Règles de confidentialité — Ex-Libris</title>
+<meta name="description" content="Règles de confidentialité de l'application Android Ex-Libris. Aucune collecte, aucun serveur, aucun partage.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+
+<h1>Règles de confidentialité</h1>
+<p class="tagline">Application Android <strong>Ex-Libris</strong> — <code>fr.exlibris.bibliotheque</code><br>
+En vigueur le 28 août 2026.</p>
+
+<div class="card">
+<p><strong>En une phrase :</strong> Ex-Libris ne collecte aucune donnée personnelle, n'a
+aucun serveur, ne crée aucun compte, ne diffuse aucune publicité, et ne transmet vos
+informations à personne.</p>
+</div>
+
+<h2>1. Aucune collecte de données</h2>
+
+<p>L'éditeur d'Ex-Libris ne reçoit, ne stocke et ne consulte <strong>aucune</strong> donnée
+vous concernant. Il n'existe aucun serveur : l'application n'a nulle part où envoyer quoi
+que ce soit.</p>
+
+<p>En particulier, Ex-Libris ne contient <strong>aucun outil de mesure d'audience, aucun
+service de statistiques, aucun outil de rapport de plantage, aucune régie publicitaire et
+aucun identifiant publicitaire</strong>.</p>
+
+<h2>2. Ce qui est enregistré, et où</h2>
+
+<p>Les informations que vous saisissez ou scannez — titres, auteurs, éditeurs, images de
+couverture, notes personnelles — sont enregistrées <strong>uniquement dans la mémoire privée
+de votre téléphone</strong>, dans l'espace réservé à l'application.</p>
+
+<p>Cet espace est protégé par Android : aucune autre application n'y a accès. Il est
+entièrement effacé lorsque vous désinstallez Ex-Libris.</p>
+
+<h2>3. Les catalogues de livres interrogés</h2>
+
+<p>Pour retrouver les informations d'un livre, l'application interroge trois catalogues
+publics :</p>
+
+<table>
+  <tr><th>Service</th><th>Ce qui lui est envoyé</th></tr>
+  <tr><td>BnF (Bibliothèque nationale de France)</td><td>Un numéro ISBN, ou les mots d'une recherche</td></tr>
+  <tr><td>Google Books</td><td>Un numéro ISBN, ou les mots d'une recherche</td></tr>
+  <tr><td>Open Library (Internet Archive)</td><td>Un numéro ISBN</td></tr>
+</table>
+
+<p>Ces requêtes ne contiennent <strong>ni votre nom, ni votre adresse e-mail, ni aucun
+identifiant de votre téléphone ou de votre compte</strong>, et ne révèlent jamais le contenu
+de votre bibliothèque : uniquement le livre recherché à cet instant. Aucune clé d'API n'est
+utilisée, et aucun compte n'est nécessaire auprès de ces services.</p>
+
+<p>Comme pour toute requête sur Internet, ces services reçoivent techniquement votre adresse
+IP. Leurs pratiques relèvent de leurs propres règles de confidentialité.</p>
+
+<h2>4. La sauvegarde Google Drive — facultative</h2>
+
+<p>Ex-Libris peut sauvegarder votre bibliothèque sur <strong>votre</strong> Google Drive.
+Cette fonction est <strong>désactivée par défaut</strong> et ne s'active que si vous
+connectez vous-même votre compte.</p>
+
+<h3>Ce à quoi l'application a accès</h3>
+
+<p>Ex-Libris demande la seule autorisation
+<code>https://www.googleapis.com/auth/drive.file</code>.</p>
+
+<p>Cette autorisation, la plus restreinte qui existe pour Drive, ne donne accès
+<strong>qu'aux fichiers créés par l'application elle-même</strong>. Ex-Libris ne peut ni
+voir, ni lister, ni lire, ni modifier, ni supprimer le moindre autre fichier de votre Drive.
+Vos documents, vos photos et le reste de votre Drive lui sont techniquement invisibles.</p>
+
+<h3>Ce qui est envoyé</h3>
+
+<ul>
+  <li>Un fichier décrivant votre catalogue de livres ;</li>
+  <li>Les images de couverture, une par fichier.</li>
+</ul>
+
+<p>Le tout dans un dossier « Ex-Libris » créé par l'application. Ces fichiers vous
+appartiennent, sur votre compte. L'éditeur n'y a aucun accès et ne peut pas les consulter.
+Les images ne sont envoyées qu'en Wi-Fi par défaut.</p>
+
+<h3>Retirer l'autorisation</h3>
+
+<p>Vous pouvez déconnecter le compte depuis les réglages de l'application, ou révoquer
+l'accès à tout moment sur
+<a href="https://myaccount.google.com/permissions">la page des autorisations de votre compte
+Google</a>. Les fichiers déjà déposés restent votre propriété ; vous pouvez les supprimer
+depuis Drive.</p>
+
+<h2>5. L'appareil photo</h2>
+
+<p>L'application demande l'accès à l'appareil photo pour deux usages : lire le code-barres
+au dos d'un livre, et lire le texte d'une couverture.</p>
+
+<p>Ces deux traitements se font <strong>sur votre téléphone</strong>. Les images de la caméra
+ne sont enregistrées nulle part et ne sont envoyées à aucun serveur. Vous pouvez refuser
+cette autorisation : la saisie manuelle reste disponible.</p>
+
+<h2>6. Les autorisations demandées</h2>
+
+<table>
+  <tr><th>Autorisation</th><th>Pourquoi</th></tr>
+  <tr><td>Internet · État du réseau</td><td>Interroger les catalogues, sauvegarder sur Drive</td></tr>
+  <tr><td>Appareil photo</td><td>Scanner un code-barres, photographier une couverture</td></tr>
+  <tr><td>Tâches en arrière-plan</td><td>Terminer une sauvegarde Drive commencée</td></tr>
+</table>
+
+<p>Ex-Libris ne demande <strong>aucune autorisation d'accès au stockage</strong>, ni aux
+contacts, ni à la position, ni au micro, ni au téléphone.</p>
+
+<h2>7. Partage avec des tiers</h2>
+
+<p>Aucun. Vos données ne sont ni vendues, ni louées, ni transmises, ni utilisées à des fins
+publicitaires ou d'entraînement de quelque système que ce soit.</p>
+
+<h2>8. Enfants</h2>
+
+<p>Ex-Libris ne s'adresse pas spécifiquement aux enfants et ne collecte sciemment aucune
+donnée les concernant — n'en collectant aucune de personne.</p>
+
+<h2>9. Suppression de vos données</h2>
+
+<p>Désinstaller l'application efface définitivement l'intégralité de la bibliothèque et des
+images stockées sur le téléphone. Si la sauvegarde Drive a été utilisée, supprimez le dossier
+« Ex-Libris » depuis votre Google Drive.</p>
+
+<h2>10. Modifications</h2>
+
+<p>Toute évolution de ces règles sera publiée sur cette page, avec sa date d'entrée en
+vigueur.</p>
+
+<h2>11. Contact</h2>
+
+<p>Ex-Libris est une application familiale sans structure commerciale. Pour toute question,
+ouvrez un signalement sur
+<a href="https://github.com/ChrisF72/ex-libris-site/issues">la page du projet</a>.</p>
+
+<footer>
+<p><a href="index.html">← Retour à l'accueil</a></p>
+<p>Ex-Libris · <code>fr.exlibris.bibliotheque</code> · règles en vigueur le 28 août 2026</p>
+</footer>
+
+</main>
+</body>
+</html>
